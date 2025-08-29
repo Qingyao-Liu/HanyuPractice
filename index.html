@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RefresherGame</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="game">
+    <h1>Refresher Game</h1>
+    <div class="quiz">
+        <h2 id="question">Question Here</h2>
+
+        <div id="answer-buttons">
+
+            <button class="btn">Option 1</button>
+            <button class="btn">Option 2</button>
+            <button class="btn">Option 3</button>
+            <button class="btn">Option 4</button>
+        </div>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <div id="score">Score: 0</div>
+    <input type="file" id="file-input" accept=".txt, text/plain, .csv, text/csv">
+</div>
+
+<script src="csv-reader.js"></script>
+<script src="game-logic.js"></script>
+
+</body>
+</html>

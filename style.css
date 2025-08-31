@@ -75,7 +75,6 @@ body{
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
-    display: none;
 }
 
 #score{
@@ -87,6 +86,7 @@ body{
     margin: 5px auto 0;
     border-radius: 4px;
     text-align: center;
+    display: none;
 }
 
 .correct{

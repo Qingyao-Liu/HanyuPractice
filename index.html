@@ -7,26 +7,42 @@
 </head>
 <body>
 <div class="game">
-    <h1>Refresher Game</h1>
+    <h1>Hànyǔ Practice</h1>
     <div class="quiz">
-        <h2 id="question">Question Here</h2>
+        <div id="introduction-text">
+            <p>
+                Welcome to the Hànyǔ practice game.
+                This is a simple and quick way to test and improve your knowledge of Hànyǔ Chinese.
+            </p>
 
-        <div id="answer-buttons">
+            <p> <br>
+                To begin, insert below the file containing the vocabulary you wish to test yourself.
+                Ensure that the file is in csv formatting, and that each line follows the format: "Hanzi, pinyin, english translation".
+                Lines with more or less than three values will not be processed.
+                Also, only use commas in the file if it's to delimit the data. Otherwise, the file may not be parsed correctly.
 
-            <button class="btn">Option 1</button>
-            <button class="btn">Option 2</button>
-            <button class="btn">Option 3</button>
-            <button class="btn">Option 4</button>
+            </p>
+
+            <p> <br>
+                Attached to the repository is a sample file, comprised of most HSK1 and HSK2 vocabulary words, for your usage and reference.
+                Feel free to modify it as fit to include any words you want.
+            </p>
         </div>
-        <button id="next-btn">Next</button>
+
+        <h2 id="question"></h2>
+        <div id="answer-btns">
+            <!-- Answer buttons go here -->
+        </div>
+        <button id="next-btn">Begin</button>
     </div>
 
     <div id="score">Score: 0</div>
     <input type="file" id="file-input" accept=".txt, text/plain, .csv, text/csv">
 </div>
 
-<script src="csv-reader.js"></script>
-<script src="game-logic.js"></script>
+<script type="module" src="js/csv-parser.js"></script>
+<script type="module" src="js/game-logic.js"></script>
+<script type="module" src="js/main.js"></script>
 
 </body>
 </html>

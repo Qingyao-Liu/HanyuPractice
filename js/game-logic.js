@@ -120,6 +120,7 @@ function optionSelected(e){
         // Update score message
         score++;
         scoreMessage.innerHTML = "Score: " + score;
+        nextButton.innerHTML = "Next";
     }
     else {
         selectedButton.classList.add("incorrect");
